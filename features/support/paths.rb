@@ -5,7 +5,7 @@ module NavigationHelpers
      when /home/
        base_url + ""
      when /publications/
-       base_url + "publicatoins"
+       base_url + "publications"
      when /vcard/
        base_url + "vcard"
      when /impressum/
@@ -26,6 +26,8 @@ module NavigationHelpers
        base_url + "contact"
      when /cv/
        base_url + "cv"
+     when /i-do-not-exist/
+       base_url + "i-do-not-exist"
      else  
        raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
        "Now, go and add a mapping in #{__FILE__}"
